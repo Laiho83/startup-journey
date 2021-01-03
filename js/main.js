@@ -82,13 +82,11 @@ $(document).ready(function(){
     },
 
     setActiveNav(el) {
-      let elWidth = $('.nav-item').width() * 1.35;
+      let elWidth = this.navItems.width() * 1.35;
       this.navItems.removeClass('active');
-      let id = $(el).data('id');
-      let activeEl = $('nav ul').find("[data-id='" + id + "']");
+      let activeEl = $('nav ul').find("[data-id='" + $(el).data('id') + "']");
       activeEl.addClass('active');
       let offset = activeEl.position().left - elWidth;
-      console.log(offset);
       this.nav.stop().animate({scrollLeft: offset}, 1000);
     },
   };
