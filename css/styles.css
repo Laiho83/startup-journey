@@ -32,14 +32,16 @@
 } 
 
 .field { 
-  width: 25%;
+  width: 23%;
   height: auto;
   position: absolute;
   background: transparent;
   white-space: nowrap;
   overflow: hidden;
 }
-
+.field h3 {
+  font-size: 13px;
+}
 .field img {
   width: 100%;
   height: 100%;
@@ -143,6 +145,15 @@
   border-radius: 50%;
 }
 
+@media screen and (min-width: 375px) {
+  body .field {
+    width: 25%;    
+  }
+  body .field h3 {
+    font-size: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   body #exclude {
     display: none;
@@ -170,5 +181,8 @@
   body #modal .modal-content {
     height: auto;
     overflow: hidden;
+  }
+  body .field h3 {
+    font-size: 18px;
   }
 }
