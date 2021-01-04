@@ -1,14 +1,28 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-family: 'Adam';
+  src: url('../assets/fonts/Adam/Adam-Light.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url('../assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  font-family: 'Adam';
+  src: url('../assets/fonts/Adam/Adam-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Adam';
+  src: url('../assets/fonts/Adam/Adam-Bold.ttf') format('truetype');
   font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gadugi';
+  src: url('../assets/fonts/Gadugi/gadugi.ttf') format('truetype');
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
@@ -25,16 +39,16 @@ html {
 body {
   font-size: 16px;
   line-height: 1.2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Adam', sans-serif;
   color: var(--text-color);
-  font-weight: 400;
+  font-weight: 700;
   overflow-x: hidden;
 }
 
 h1 {
   font-size: 18px;
   line-height: 1.4rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gadugi', sans-serif;
   color: var(--text-color);
   font-weight: 700;
   text-transform: uppercase;
@@ -43,21 +57,23 @@ h2 {
   margin-bottom: 25px;
   font-size: 24px;
   line-height: 1.2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Adam', sans-serif;
   color: var(--text-color);
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  text-shadow: 1px 0 0 #ffffff;
 }
 
 h3 {
   margin-top: 5px;
   line-height: 1.2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Adam', sans-serif;
   color: #ffffff;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 1px 0 0 #ffffff;
 }
 
 p {
