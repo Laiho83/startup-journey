@@ -4,8 +4,11 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background: var(--primary-color);
-  z-index: 88;
+  background: url('./../assets/images/bg_mobile.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #container {
@@ -25,11 +28,15 @@
   width: 115px;
   height: 115px;
   position: absolute;  
-  background: #222;
   border-radius: 50%;
   text-align: center;
   word-spacing: 115px;
+  background: #000; 
 } 
+
+#center h1 {
+  text-shadow: 1px 0 #ffffff;
+}
 
 .field { 
   width: 23%;
@@ -65,7 +72,11 @@
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  background: #ffffff;
+  background: url('./../assets/images/bg_mobile.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #000;
   z-index: -1;
   opacity: 0;
@@ -161,6 +172,10 @@
   #center { 
     width: 175px;
     height: 175px;    
+  }
+  #center h1 {
+    font-size: 22px;
+    line-height: 1.5rem;
   }
   #container .field {
     width: 185px;
